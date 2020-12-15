@@ -1,0 +1,20 @@
+{
+  "name": "NMIT_Opportunities_Board",
+  "version": "1.0.0",
+  "description": "A board for Nelson companies to provide opportunities (e.g. internships) to NMIT students",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frank-Schulz/NMIT_Opportunities_Board.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Frank-Schulz/NMIT_Opportunities_Board/issues"
+  },
+  "homepage": "https://github.com/Frank-Schulz/NMIT_Opportunities_Board#readme"
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NMIT Oppurtunity Board</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/homepage/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="nav">
+        <div>
+            <a href="/"><img class="active logo" alt="logo" src="/src/logo.png" /></a>
+            <a href="/"><img class="mobileLogo" alt="logo" src="/src/logo_mobile.png"></a>
+            <ul id="nav-mobile" class="right">
+                <li id="dropdownIcon"><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a></li>
+                <li><a href="/job-details/jobs.html">Job list</a></li>
+                <li><a href="">About us</a></li>
+                <li class="logged-in"><a href="#" id="logout">Logout</a></li>
+                <li class="logged-in" id="user-email"></li>
+                <li class="logged-out"><a href="#" class="modal-trigger" data-target="modal-login">Login</a></li>
+                <li class="logged-out"><a href="/signuppage/signup.html" class="modal-trigger" data-target="modal-signup">Sign up</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <script src="/homepage/home.js" async defer>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, 'left');
+        });
+    </script>
+</body>
+
+</html>

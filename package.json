@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Frank-Schulz/NMIT_Opportunities_Board/issues"
   },
-  "homepage": "https://github.com/Frank-Schulz/NMIT_Opportunities_Board#readme"
+  "homepage": "https://github.com/Frank-Schulz/NMIT_Opportunities_Board#readme",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  }
 }

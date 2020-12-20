@@ -1,0 +1,50 @@
+/* Responsive */
+
+#dropdownIcon {
+    display: none;
+}
+
+.mobileLogo {
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    .navMiddle li:not(:nth-child(1)) {
+        display: none;
+    }
+    #dropdownIcon {
+        top: 800px;
+        padding: 0 0 10px 0;
+        display: block;
+    }
+    /* .navMiddle ul li a {
+        margin: 0px 14px 5px 0px;
+        padding: 8px 14px;
+    } */
+    .nav {
+        display: grid;
+        grid-template-rows: 60px;
+        grid-template-columns: 255px auto 0;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .nav {
+        grid-template-columns: 70px minmax(73px, auto);
+        margin: 0;
+        padding: 0;
+        font-size: 80%;
+    }
+    .logo {
+        display: none;
+    }
+    .mobileLogo {
+        display: block;
+        height: 80%;
+        margin: 0;
+    }
+    /* show login and sign up on side nav */
+    #hide a {
+        display: none !important;
+    }
+}

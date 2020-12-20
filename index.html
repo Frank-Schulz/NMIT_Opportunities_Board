@@ -24,32 +24,44 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="nav">
-        <div>
-            <a href="/"><img class="active logo" alt="logo" src="/src/logo.png" /></a>
-            <a href="/"><img class="mobileLogo" alt="logo" src="/src/logo_mobile.png"></a>
-            <ul id="nav-mobile" class="right">
-                <li id="dropdownIcon"><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a></li>
-                <li><a href="/job-details/jobs.html">Job list</a></li>
-                <li><a href="">About us</a></li>
-                <li class="logged-in"><a href="#" id="logout">Logout</a></li>
-                <li class="logged-in" id="user-email"></li>
-                <li class="logged-out"><a href="#" class="modal-trigger" data-target="modal-login">Login</a></li>
-                <li class="logged-out"><a href="/signuppage/signup.html" class="modal-trigger" data-target="modal-signup">Sign up</a></li>
-            </ul>
-        </div>
-
+    <!-- *NAV and side NAV -->
+    <nav id="header">
     </nav>
-    <script src="/homepage/home.js" async defer>
+    <ul id="slide-out" class="sidenav">
+        <li class="menu">Menu</li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="/job-details/jobs.html">Job List</a></li>
+        <li><a href="/">About Us</a></li>
+        <li><a href="/">Contact us</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li class="logged-in"><a href="#" id="logout">Logout</a></li>
+        <li class="logged-in" id="user-email"></li>
+        <li class="logged-out"><a href="#" class="modal-trigger" data-target="modal-login">Login</a></li>
+        <li class="logged-out"><a href="/html/signup.html" class="modal-trigger" data-target="modal-signup">Sign up</a></li>
+    </ul>
+    <!--SECTION Body-->
+
+    <!-- SECTION Footer -->
+    <div id="footer"></div>
+    <script>
+        $(document).ready(function() {
+            $('#header').load("/header.html");
+            $('#footer').load("/footer.html");
+        });
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.modal');
             var instances = M.Modal.init(elems);
         });
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems, 'left');
+            var instances = M.Sidenav.init(elems, 'right');
         });
     </script>
+    <script src="/homepage/home.js" async defer></script>
 </body>
 
 </html>

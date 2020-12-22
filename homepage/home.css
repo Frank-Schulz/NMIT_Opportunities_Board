@@ -1,5 +1,15 @@
 /* Responsive */
 
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+}
+
+.mission {
+    height: 200px;
+}
+
 div li a,
 nav ul li a {
     color: black;
@@ -34,7 +44,7 @@ footer.page-footer {
     }
 }
 
-@media screen and (max-width: 505px) {
+@media screen and (max-width: 530px) {
     #nav-mobile li:not(:nth-child(1)) {
         display: none;
     }
